@@ -41,12 +41,10 @@ string Recipe::descriptor() {
     std::string str = strs.str();
     string first_line = "Recipe -" + get_name_of_recipe() + "- x " + str + ":\n";
     description.append(first_line);
-    std::vector<Ingredient> v;
-    Ingredient* array = &v[0];
-    for( unsigned int a = 0; a < sizeof(array); a = a + 1 )
+    for (std::size_t i = 0; i != ingredient_list.size(); ++i)
     {
-        std::string s = std::to_string(a);
-        string line = s + "-" + array[a].descriptor() + "\n";
+        std::string s = std::to_string(i);
+        std::string line = s + "-" + ingredient_list[i].descriptor() + "\n";
         description.append(line);
     }
     return description;
