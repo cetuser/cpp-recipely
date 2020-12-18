@@ -11,11 +11,12 @@
 #include <sstream>
 using namespace std;
 
-Recipe::Recipe(vector<Ingredient> ingredient_list, string n, double r) {
-    name = n;
-    ingredient_list = ingredient_list;
-    replication_factor = r;
-}
+
+Recipe::Recipe(vector<Ingredient> ingredient_list, string n, double r)
+    : ingredient_list(ingredient_list),
+    name(n),
+    replication_factor(r)
+{}
 string Recipe::get_name_of_recipe() {
     return name;
 }
@@ -43,10 +44,11 @@ string Recipe::descriptor() {
     description.append(first_line);
     for (std::size_t i = 0; i != ingredient_list.size(); ++i)
     {
-        std::string s = std::to_string(i);
-        std::string line = s + "-" + ingredient_list[i].descriptor() + "\n";
+        std::string s = std::to_string(i+1);
+        std::string line = s + "- " + ingredient_list[i].descriptor() + "\n";
         description.append(line);
     }
     return description;
     
 }
+
