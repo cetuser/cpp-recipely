@@ -17,8 +17,8 @@ class CookBook {
 private:
     vector<CookedProduct> cooked_product_list;
 public:
-    CookedProduct(vector<CookedProduct> cooked_product_list);
-    
+    CookBook(vector<CookedProduct> cooked_product_list);
+    string descriptor();
 };
 
 #endif /* CookBook_hpp */

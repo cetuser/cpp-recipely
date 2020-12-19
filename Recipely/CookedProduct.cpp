@@ -15,6 +15,3 @@ CookedProduct::CookedProduct(vector<Ingredient> ingredient_list, string n, doubl
 {
     
 }
-string CookedProduct::descriptor() {
-    return "name";
-}

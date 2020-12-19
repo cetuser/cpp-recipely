@@ -14,3 +14,16 @@ using namespace std;
 CookBook::CookBook(vector<CookedProduct> cooked_product_list): cooked_product_list(cooked_product_list) {
     
 }
+
+string CookBook::descriptor() {
+    string description = "";
+    
+    for (std::size_t i = 0; i != cooked_product_list.size(); ++i)
+    {
+        std::string line = cooked_product_list[i].descriptor() + "\n";
+        description.append(line);
+    }
+    
+    return description;
+    
+}

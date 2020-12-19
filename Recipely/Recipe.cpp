@@ -45,7 +45,7 @@ string Recipe::descriptor() {
     for (std::size_t i = 0; i != ingredient_list.size(); ++i)
     {
         std::string s = std::to_string(i+1);
-        std::string line = s + "- " + ingredient_list[i].descriptor() + "\n";
+        std::string line = s + "- " + ingredient_list[i].descriptor(replication_factor) + "\n";
         description.append(line);
     }
     return description;

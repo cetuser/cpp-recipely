@@ -16,7 +16,6 @@ private:
     
 public:
     CookedProduct(vector<Ingredient> ingredient_list, string n, double r);
-    string descriptor();
 };
 
 #endif /* CookedProduct_hpp */

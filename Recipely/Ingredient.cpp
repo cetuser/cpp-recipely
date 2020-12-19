@@ -15,11 +15,11 @@ Ingredient::Ingredient(string n, string u, double q): Product(n, u)
 {
     quantity = q;
 }
-string Ingredient::descriptor() {
+string Ingredient::descriptor(double replication_factor) {
     string unit = get_name_of_unit();
     string product_name = get_name_of_product();
     std::ostringstream strs;
-    strs << quantity;
+    strs << quantity * replication_factor;
     std::string str = strs.str();
     return str + " " + unit + " " + "of " + product_name;
 }
