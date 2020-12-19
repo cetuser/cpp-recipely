@@ -11,6 +11,8 @@
 		5C28F5CA258CE7730071CEC2 /* Recipe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5C28F5C8258CE7730071CEC2 /* Recipe.cpp */; };
 		5C28F5CE258CE77E0071CEC2 /* Product.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5C28F5CC258CE77E0071CEC2 /* Product.cpp */; };
 		5C28F5ED258CEAA10071CEC2 /* Ingredient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5C28F5EB258CEAA10071CEC2 /* Ingredient.cpp */; };
+		5CC3BC2C258E13AE00F0F2D9 /* CookedProduct.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CC3BC2A258E13AE00F0F2D9 /* CookedProduct.cpp */; };
+		5CC3BC30258E166900F0F2D9 /* CookBook.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CC3BC2E258E166900F0F2D9 /* CookBook.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +36,10 @@
 		5C28F5CD258CE77E0071CEC2 /* Product.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Product.hpp; sourceTree = "<group>"; };
 		5C28F5EB258CEAA10071CEC2 /* Ingredient.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Ingredient.cpp; sourceTree = "<group>"; };
 		5C28F5EC258CEAA10071CEC2 /* Ingredient.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Ingredient.hpp; sourceTree = "<group>"; };
+		5CC3BC2A258E13AE00F0F2D9 /* CookedProduct.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CookedProduct.cpp; sourceTree = "<group>"; };
+		5CC3BC2B258E13AE00F0F2D9 /* CookedProduct.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CookedProduct.hpp; sourceTree = "<group>"; };
+		5CC3BC2E258E166900F0F2D9 /* CookBook.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CookBook.cpp; sourceTree = "<group>"; };
+		5CC3BC2F258E166900F0F2D9 /* CookBook.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CookBook.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +79,10 @@
 				5C28F5CD258CE77E0071CEC2 /* Product.hpp */,
 				5C28F5EB258CEAA10071CEC2 /* Ingredient.cpp */,
 				5C28F5EC258CEAA10071CEC2 /* Ingredient.hpp */,
+				5CC3BC2A258E13AE00F0F2D9 /* CookedProduct.cpp */,
+				5CC3BC2B258E13AE00F0F2D9 /* CookedProduct.hpp */,
+				5CC3BC2E258E166900F0F2D9 /* CookBook.cpp */,
+				5CC3BC2F258E166900F0F2D9 /* CookBook.hpp */,
 			);
 			path = Recipely;
 			sourceTree = "<group>";
@@ -133,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CC3BC30258E166900F0F2D9 /* CookBook.cpp in Sources */,
 				5C28F5ED258CEAA10071CEC2 /* Ingredient.cpp in Sources */,
+				5CC3BC2C258E13AE00F0F2D9 /* CookedProduct.cpp in Sources */,
 				5C28F5C1258CE7550071CEC2 /* main.cpp in Sources */,
 				5C28F5CE258CE77E0071CEC2 /* Product.cpp in Sources */,
 				5C28F5CA258CE7730071CEC2 /* Recipe.cpp in Sources */,

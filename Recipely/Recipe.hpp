@@ -22,12 +22,12 @@ private:
     double replication_factor;
 
 public:
-    Recipe(vector<Ingredient> ingredientList, string n, double r);
+    Recipe(vector<Ingredient> ingredient_list, string n, double r);
     string get_name_of_recipe();
-    vector<Ingredient> get_ingredientList();
+    vector<Ingredient> get_ingredient_list();
     double get_replication_factor();
     void set_name(string n);
-    void set_ingredient_list(vector<Ingredient> ingredientList);
+    void set_ingredient_list(vector<Ingredient> ingredient_list);
     void set_replication_factor(double replicationFactor);
     string descriptor();
 };

@@ -20,7 +20,7 @@ Recipe::Recipe(vector<Ingredient> ingredient_list, string n, double r)
 string Recipe::get_name_of_recipe() {
     return name;
 }
-vector<Ingredient> Recipe::get_ingredientList() {
+vector<Ingredient> Recipe::get_ingredient_list() {
     return ingredient_list;
 }
 double Recipe::get_replication_factor() {
